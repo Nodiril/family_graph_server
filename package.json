@@ -1,0 +1,28 @@
+{
+  "name": "family_graph_server",
+  "version": "0.1.0",
+  "main": "app.js",
+  "scripts": {
+    "migrate": "knex migrate:latest",
+    "start": "npm run migrate && nodemon app"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "apollo-server-koa": "^2.18.2",
+    "dotenv": "^8.2.0",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-resolvers": "^0.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.6",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.4.0",
+    "objection": "^2.2.3",
+    "pg": "^8.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
