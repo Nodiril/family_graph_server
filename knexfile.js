@@ -2,6 +2,14 @@ require('dotenv').config();
 
 module.exports = {
   development: {
+    client: 'sqlite3',
+    debug: true,
+    connection: {
+      filename: "./familja.sqlite"
+    },
+    useNullAsDefault: true
+  },
+  live: {
     client: 'postgresql',
     debug: true,
     connection: {

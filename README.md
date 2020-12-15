@@ -1,17 +1,9 @@
-To run we need to prepare the database, for that we use knex. Because we are using migrations and seeds we need to install knex cli (npm install knex -g)
-1. create database in server of your choice (working with knex) and adjust the client key in knexfile.js based on your database
-2. Add .env file to root with the keys:
-      DB: your_database
-      USER: your_database_user
-      PASSWORD: your_database_users_password
-3. knex migrate:latest - this will create the tables in the database basedon the migration file in migrations folder.
-4. knex seed:run - this will populate the tables with data. (Abraham Lincolns family)
-5. git clone https://github.com/Nodiril/family_graph_server.git
-6. cd family_graph_server/
-7. npm i
-8. npm start
-
-9: go to http://localhost:8641/graphql - here you can run queries based on what is defined in the schema and resolvers.
+To run we need to prepare the database, for that we use knex. Because we are using migrations and seeds we need to install knex cli (npm install knex -g), for the purpose of running locally more simple we will use sqlite3 database.
+1. git clone https://github.com/Nodiril/family_graph_server.git
+2. cd family_graph_server/ && npm i
+3. knex migrate:latest && knex seed:run
+4. npm start
+5. go to http://localhost:8641/graphql - here you can run queries based on what is defined in the schema and resolvers.
 
 
 Data structure to store information about a family. The basic componenents for storing the information are the nodes (people) and the edges (relationships).
