@@ -10,6 +10,7 @@ To run we need to prepare the database, for that we use knex. Because we are usi
 6. cd family_graph_server/
 7. npm i
 8. npm start
+
 9: go to http://localhost:8641/graphql - here you can run queries based on what is defined in the schema and resolvers.
 
 
