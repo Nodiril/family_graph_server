@@ -17,3 +17,6 @@ Edge: defines a relationship between two individuals (partners) or between a rel
 An edge consists of two fkeys node_a and node_b and the relationship enum (life partners (lp), parent child (pc)).
 When the relationship on an edge is 'lp', node_a points to a node id and node_b points to a node id.
 When the relationship on an edge is 'pc', node_a points to an edge id (the parents) and node_b points to a node id (the child).
+
+The seed data demonstrates the structure with the Lincoln family tree.
+![Lincoln Tree](https://user-images.githubusercontent.com/5985714/102284602-6dd39780-3f02-11eb-8dfc-de157c8831f5.png)
