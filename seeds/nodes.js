@@ -6,14 +6,14 @@ exports.seed = function(knex) {
       // Inserts seed entries
       return knex('nodes').insert([
         {
-          first_name: '	Robert',
+          first_name: 'Robert',
           last_name: 'Todd',
           id: 1,
           graph_id: 1,
           gender: 'm',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'Elizabeth',
@@ -22,8 +22,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'f',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'Mary',
@@ -33,8 +33,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'f',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'Thomas',
@@ -43,8 +43,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'm',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'Nancy',
@@ -54,8 +54,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'f',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'Abraham',
@@ -64,8 +64,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'm',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'Robert',
@@ -74,8 +74,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'm',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'Edward',
@@ -84,8 +84,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'm',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'William',
@@ -94,8 +94,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'm',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'Thomas',
@@ -104,8 +104,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'm',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'Mary',
@@ -115,8 +115,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'f',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'Mary',
@@ -126,8 +126,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'f',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'Jessie',
@@ -137,8 +137,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'f',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           first_name: 'Abraham',
@@ -147,8 +147,8 @@ exports.seed = function(knex) {
           graph_id: 1,
           gender: 'm',
           dob: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         }
       ]);
     });

@@ -13,8 +13,8 @@ exports.seed = function(knex) {
           relationship: 'lp',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 2,
@@ -24,8 +24,8 @@ exports.seed = function(knex) {
           relationship: 'pc',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 3,
@@ -35,8 +35,8 @@ exports.seed = function(knex) {
           relationship: 'lp',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 4,
@@ -46,8 +46,8 @@ exports.seed = function(knex) {
           relationship: 'pc',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 5,
@@ -57,8 +57,8 @@ exports.seed = function(knex) {
           relationship: 'lp',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 6,
@@ -68,8 +68,8 @@ exports.seed = function(knex) {
           relationship: 'pc',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 7,
@@ -79,8 +79,8 @@ exports.seed = function(knex) {
           relationship: 'pc',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 8,
@@ -90,8 +90,8 @@ exports.seed = function(knex) {
           relationship: 'pc',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 9,
@@ -101,8 +101,8 @@ exports.seed = function(knex) {
           relationship: 'pc',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 10,
@@ -112,8 +112,8 @@ exports.seed = function(knex) {
           relationship: 'lp',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 11,
@@ -123,8 +123,8 @@ exports.seed = function(knex) {
           relationship: 'pc',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 12,
@@ -134,8 +134,8 @@ exports.seed = function(knex) {
           relationship: 'pc',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 13,
@@ -145,8 +145,8 @@ exports.seed = function(knex) {
           relationship: 'pc',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         },
         {
           id: 14,
@@ -156,8 +156,8 @@ exports.seed = function(knex) {
           relationship: 'pc',
           start: null,
           end: null,
-          created_at: new Date(),
-          updated_at: new Date()
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
         }
       ]);
     });
