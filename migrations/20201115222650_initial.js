@@ -39,17 +39,22 @@ exports.up = knex => {
       table.date('updated_at')
     })
     .raw(`create view partner_edges as
-    SELECT e1.id edge_id, e2.id partners
-    FROM edges e1 
-LEFT JOIN edges e2 
-      ON ( e1.node_b = e2.node_a OR e1.node_b = e2.node_b ) 
-     AND e1.relationship = 'pc' AND e2.relationship = 'lp' 
-     AND e1.id != e2.id;
-`)
+    SELECT * from edges where relationship = 'lp';
+    `)
+    .raw(`create view parent_edges as
+    SELECT * from edges where relationship = 'pc';
+    `)
+    .raw(`create view parent_nodes as
+      select id, node_a as node_id from partner_edges 
+      union all
+      select id, node_b as node_id from partner_edges;
+    `)
 }
 
 exports.down = knex => {
   return knex.schema
+    .raw('drop view parent_nodes')
+    .raw('drop view parent_edges')
     .raw('drop view partner_edges')
     .dropTableIfExists('edges')
     .dropTableIfExists('nodes')

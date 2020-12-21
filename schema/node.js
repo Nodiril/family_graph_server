@@ -15,6 +15,8 @@ module.exports = gql`
     dob: Date
     occupation: String
     contact: String
+    parent_edges: ParentEdge
+    partner_edges: [PartnerEdge]
     created_at: Date
     updated_at: Date
   }

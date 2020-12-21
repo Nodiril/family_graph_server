@@ -11,7 +11,7 @@ class Graph extends ModelBase {
     static relationMappings = {
         edges: {
             relation: ModelBase.HasManyRelation,
-            modelClass: 'Edge',
+            modelClass: 'PartnerEdge',
             join: {
                 from: 'graphs.id',
                 to: 'edges.graphId'
