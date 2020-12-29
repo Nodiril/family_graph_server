@@ -1,6 +1,3 @@
-const PartnerEdge = require('../models/PartnerEdge')
-const ParentEdge = require('../models/ParentEdge')
-
 module.exports = {
     Query: {
         partner_edges: async (parent, { }, { ctx, models }) => {
