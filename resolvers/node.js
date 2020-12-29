@@ -6,7 +6,7 @@ module.exports = {
         nodes: async (parent, { }, { ctx, models }) => {
             const obj = gql`${ctx.request.body.query}`;
             var nodes = await models.Node.query().where('id', 1)
-                .withGraphFetched(traverse(obj.definitions[0].selectionSet.selections[0]))
+                .withGraphFetched(getObjectNotation(obj.definitions[0].selectionSet.selections[0]))
 
             return nodes;
         }
